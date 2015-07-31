@@ -1,0 +1,12 @@
+{application,leshu_db,
+             [{description,[]},
+              {vsn,"1"},
+              {registered,[]},
+              {applications,[kernel,stdlib,hstdlib,emysql]},
+              {mod,{leshu_db_app,[fuck_rebar]}},
+              {env,[{tcp_listener_ip,[{ip,"0.0.0.0"}]}]},
+              {modules,[db_mysql,db_mysql_stat,db_mysqlutil,
+                        dynamic_db_interface,dynamic_hdb_interface,
+                        emysql_wrap,erlang_mysql_driver_wrap,
+                        generate_info_header_file,leshu_db_app,leshu_db_sup,
+                        table_to_record]}]}.

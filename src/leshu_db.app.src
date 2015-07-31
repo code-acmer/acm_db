@@ -1,0 +1,16 @@
+{application, leshu_db,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  hstdlib,
+                  emysql
+                 ]},
+  {mod, { leshu_db_app, [fuck_rebar]}},
+  {env, [{tcp_listener_ip,[
+                             {ip, "0.0.0.0"}
+                            ]}]}
+ ]}.

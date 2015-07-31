@@ -1,0 +1,12 @@
+[
+ {host, "127.0.0.1"},
+ {port, 3306}, 
+ {user, "root"},
+ {password, "root"},
+ {dblist, [shsg_game, shsg_base, shsg_center, shsg_log]},
+ {include_path, "/tmp/"}
+].
+
+[
+ {server, server}
+].
